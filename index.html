@@ -1,19 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Le Wagon - Web Development Sprint</title>
-
-  <!-- Change these Google fonts with your own choice -->
-  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apoorva — Scientific Graphic Design</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    body{margin:0;background:#fbfbfb;color:#111;line-height:1.4}
+    header{padding:28px 20px;background:#fff;border-bottom:1px solid #e9e9e9}
+    .wrap{max-width:980px;margin:0 auto}
+    h1{margin:0;font-size:20px;font-weight:600}
+    p.lead{margin:8px 0 0;color:#444}
+    .meta{margin-top:10px;font-size:13px;color:#666}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;padding:20px}
+    .card{background:#fff;border:1px solid #eee;padding:10px;border-radius:8px;display:flex;flex-direction:column;gap:8px}
+    .card img{width:100%;height:auto;border-radius:6px;object-fit:cover;display:block}
+    .cap{font-size:13px;color:#333;margin:0}
+    .cap .role{color:#666;font-size:12px}
+    footer{padding:20px;text-align:center;font-size:13px;color:#666}
+    a{color:inherit;text-decoration:underline}
+    @media (max-width:420px){h1{font-size:18px}}
+  </style>
 </head>
 <body>
-  <!-- Banner section -->
+  <header>
+    <div class="wrap">
+      <h1>Apoorva Jnana — Scientific Graphic Designer</h1>
+      <p class="lead">I convert experimental data and manuscripts into clear, publication-ready figures, visual abstracts, and presentation graphics. Tools: Illustrator, BioRender, Python/Matplotlib, Inkscape.</p>
+      <div class="meta">Email: apoorva@example.com • <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></div>
+    </div>
+  </header>
 
-  <!-- Cards section -->
+  <main class="wrap">
+    <section style="margin-top:18px">
+      <div class="grid">
+        <!--
+          Copy-paste this block for each image you uploaded.
+          Change src="images/figure1.jpg" to match your filename.
+          Edit the <strong>title</strong> and the small text to describe your role and publication.
+        -->
+        <article class="card">
+          <img src="images/figure1.jpg" alt="Figure 1 — short description" onerror="this.style.display='none'">
+          <div>
+            <p class="cap"><strong>Pyocyanin figure</strong></p>
+            <p class="cap role">Designed figure and layout. Tools: Illustrator, BioRender. Published in <a href="https://example.com" target="_blank" rel="noopener">Journal X</a></p>
+          </div>
+        </article>
 
-  <!-- Footer section -->
+        <article class="card">
+          <img src="images/visualabstract1.png" alt="Visual abstract — short description" onerror="this.style.display='none'">
+          <div>
+            <p class="cap"><strong>Visual abstract — biofilm dynamics</strong></p>
+            <p class="cap role">Created visual abstract from manuscript figures. Tools: Illustrator. <a href="https://example.com" target="_blank" rel="noopener">Published</a></p>
+          </div>
+        </article>
+
+        <!-- Add more card blocks here. Up to 12 is fine. -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Download PDF portfolio: <a href="https://github.com/apoorvaj192/landing-page/raw/master/portfolio.pdf">portfolio.pdf</a> (optional) • © Apt</div>
+  </footer>
 </body>
 </html>
